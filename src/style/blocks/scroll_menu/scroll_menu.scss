@@ -1,0 +1,96 @@
+#sectionMenu{
+    // height: 100vh;
+    height: 100%;
+    background: url(../img/menu_scroll/slider-menu.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu__section-container{
+
+    height: inherit;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    background: rgba(47, 50, 52, 0.3);
+}
+  
+.section__title--text {
+    position: absolute;
+    top: rem(109px);
+    left: rem(84px);
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+}
+  
+.menu-acco{
+    display: flex;
+    height: 100%;
+}
+  
+.menu-acco__line{
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+}
+  
+.menu-acco__trigger{
+    position: relative;
+    width: rem(102px);
+
+    &:hover{
+        border: 1px solid rgba(47, 50, 52, 0.5);
+    }
+
+    @include tablets{
+        width: rem(110px);
+    }
+
+    @include phones{
+        width: rem(140px);
+    }
+}
+  
+.menu-acco__trigger-text{
+    position: absolute;
+    left: 50%;
+    bottom: rem(15px);
+    transform: rotate(-90deg) translate(-50%, -50%);
+    
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+  
+.menu-acco__content{
+    width: 0;
+    padding: 0px;
+    opacity: 1;
+    overflow: hidden;
+
+    background: rgba(47, 50, 52, 0.7);
+    transition: 0.23s;
+    
+}
+
+.menu-acco__text{
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16px);
+}
+  
+.menu-acco__line_active > .menu-acco__content {
+    width: rem(300px);
+    // width: 100%;
+    padding: rem(20px);
+    box-sizing: border-box;
+    opacity: 1;
+    z-index: 10;
+}
+
+.product-menu__img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,9 @@
+@import "./variables.scss";
+@import "./normalize.css";
+@import "./blocks/base.scss";
+@import "./blocks/hipage.scss";
+@import "./blocks/why/why.scss";
+@import "./blocks/review/review.scss";
+@import "./blocks/order/order.scss";
+@import "./blocks/fixed-menu/fixed-menu.scss";
+@import "./blocks/team/team.scss";

@@ -1,0 +1,19 @@
+.hamburger{
+    width: rem(26.11px);
+    height: rem(20px);
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablets{
+        display: flex;
+    }
+}
+
+.hamburger-layer{
+    display: flex;
+    background-color: #fff;
+    height: rem(4px);
+    border-radius: rem(10px);
+}

@@ -1,0 +1,27 @@
+.map{
+    // background: url(../img/map/map.png) no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    min-height: rem(652px);
+    // height: 100vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    @include tablets{
+        background-position: center;
+        // min-height: rem(633px);
+    }
+
+    @include phones{
+        background-position: center;
+        // min-height: rem(633px);
+    }
+}
+
+.map__directly{
+    flex: 1;
+}

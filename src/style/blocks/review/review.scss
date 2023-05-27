@@ -1,0 +1,184 @@
+.reviews{
+    background-color: #fff;
+
+    min-height: rem(652px);
+    // height: 100vh;
+    height: 100%;
+
+    display: flex;
+
+    // @include tablets{
+    //     min-height: rem(976px);
+    // }
+
+    // @include phones{
+    //     min-height: rem(800px);
+    // }
+}
+
+.reviews__title{
+    margin-top: rem(58px);
+    margin-bottom: rem(32px);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(48px);
+    line-height: rem(58px);
+}
+
+.reviews__title-text{
+    margin: 0;
+
+    @include phones{
+        font-size: rem(40px);
+    }
+}
+
+.reviews__container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: $containerWidth;
+}
+
+.reviews__block{
+    width: 100%;
+    max-width: $containerWidth;
+    height: rem(348px);
+    background-color: #F8FAF9;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+}
+
+.reviews__unit{
+    display: none;
+    align-items: center;
+
+    &--active{
+        display: flex;
+    }
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.review__image{
+    width: rem(253px);
+    height: rem(264px);
+    background-image: url(../img/review/Rectangle7.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: rem(42px);
+
+    &--mark{
+        background-image: url(../img/review/RectangleMark.png);
+    }
+    &--vasilii{
+        background-image: url(../img/review/RectangleVasilii.png);
+    }
+
+    //not specially 3 rows
+    @include tablets{
+        width: rem(130px);
+        height: rem(130px);
+        background-position: center;
+        background-size: cover;
+
+        margin-top: rem(56px);
+        margin-left: rem(0px);
+        margin-right: rem(0px);
+    }
+}
+
+.reviews__text{
+    max-width: rem(463px);
+    margin-left: rem(40px);
+
+    //not specially 5 rows
+    max-height: rem(264px);
+    overflow: hidden;
+    @include tablets{
+        margin-left: rem(20px);
+        margin-right: rem(20px);
+        max-width: rem(677px);
+    }
+}
+
+.review__title{
+    color: #292929;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(27px);
+
+    @include tablets{
+        margin-top: rem(32px);
+    }
+}
+.review__text{
+    // position: static;
+
+    color: #666666;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(18px);
+
+    margin-top: rem(14px);
+}
+.review__name{
+    color: #292929;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(18px);
+
+    margin-top: rem(25px);
+
+    @include tablets{
+        margin-bottom: rem(22px);
+    }
+}
+
+.review__items{
+    display: flex;
+    margin-top: rem(15px);
+}
+
+.review__item{
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover{
+        border: 4px solid #FEDB3F;
+        transition: 0.08s;
+    }
+
+    &--active{
+        border: 4px solid #FEDB3F;
+    }
+    
+    width: rem(74px);
+    height: rem(74px);
+
+    margin-left: rem(6px);
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.review__next{
+    margin-bottom: rem(63px);
+}

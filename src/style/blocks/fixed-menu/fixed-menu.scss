@@ -1,0 +1,58 @@
+.fixed-menu{
+    display: flex;
+    position: fixed;
+    top: 20%;
+    right: 3%;
+    z-index: 20;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.fixed-menu__item{
+    margin-bottom: rem(5px);
+
+    &--active{
+        .fixed-menu__link{
+            border-color: white;
+        }
+        // тут закрасили кругляшку на активном пункте меню
+    }
+}
+
+.fixed-menu__link{
+    width: rem(18px);
+    height: rem(19px);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    // это кругляшка для выделения активного пункта, пока прозрачная
+    display: block;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        width: rem(9px);height: rem(9px);
+        border-radius: 50%;
+        background: white;
+
+        position: absolute;
+        top: 50%;left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.fixed-menu--shadowed .fixed-menu__list .fixed-menu__item .fixed-menu__link{
+    &::before{
+        background: #10345B;
+    }
+}
+.fixed-menu--shadowed .fixed-menu__list .fixed-menu__item{
+
+    &--active{
+        .fixed-menu__link{
+            border-color: rgb(27, 26, 134);
+        }
+}
+}

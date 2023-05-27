@@ -1,0 +1,203 @@
+.hipage{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: rem(652px);
+    // height: 100vh;
+    height: 100%;
+    min-height: rem(650px);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(18px);
+
+    display: flex;
+    flex-direction: column;
+
+    @include tablets{
+        background-position: right 5%;
+        // min-height: rem(999px);
+    }
+
+    @include phones{
+        border: none;
+
+        min-height: rem(800px);
+
+        background: url(../img/arnaud.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.header, .menu__list, .contacts--header{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    padding-top: rem(28px);
+    padding-top: rem(28px);
+
+    @include tablets{
+        background: #1968B1;
+    }
+
+    @include phones{
+        background: #1968B1;
+        // padding: 0;
+    }
+}
+.contacts__phone{
+    font-size: rem(22px);
+    margin-left: rem(5.6px);
+}
+.contacts__phone:hover{
+    color: #FEDB3F;
+}
+
+.header__container{
+    // width: 100%;
+    display: flex;
+    // flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include tablets{
+        align-items: center;
+        padding-bottom: rem(28px);
+    }
+
+    @include phones{
+        align-items: center;
+        padding-bottom: rem(28px);
+    }
+}
+
+.header__menu{
+    margin: 0 47px;
+    
+    @include tablets{
+        display: none;
+    }
+}
+
+.menu__list{
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: flex-start;
+}
+
+.menu__item{
+    margin-left: rem(22px);
+    font-style: normal;
+}
+.menu__item:first-child{
+    margin-left: 0;
+}
+
+.basic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-top: rem(102.74px);
+    // margin-left: 80px;
+    flex: 1;
+}
+
+.basic__container{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablets{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.title-text{
+    width: rem(490px);
+    height: rem(175px);
+    font-size: rem(48px);
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+
+    @include tablets{
+        width: 95%;
+        text-align: center;
+        height: auto;
+    }
+
+    @include phones{
+        font-size: rem(40px);
+    }
+}
+
+.subtitle{
+    margin-top: rem(17px);
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(21px);
+
+    @include tablets{
+        margin-top: rem(9px);
+    }
+}
+
+.button--hipage{
+    margin-top: rem(39px);
+    font-weight: 800;
+    font-size: rem(16px);
+    text-transform: uppercase;
+}
+
+.advantages{
+    // margin-top: rem(64px);
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(16px);
+
+    &__item{
+        margin-left: rem(33.15px);
+        display: flex;
+        align-items: center;
+
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+
+    &__pic{
+        margin-right: rem(14.15px);
+    }
+
+    &__list{
+        display: flex;
+    }
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.contacts--header{
+    @include tablets{
+        display: none;
+    }
+}

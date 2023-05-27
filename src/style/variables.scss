@@ -1,0 +1,21 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+@function rem($px){
+    @return calc($px / $baseFontSize) + 0rem;
+}
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+@mixin tablets{
+    @media screen and (max-width: $tablets){
+        @content
+    }
+}
+@mixin phones{
+    @media screen and (max-width: $phones){
+        @content
+    }
+}

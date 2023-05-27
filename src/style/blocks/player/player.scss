@@ -1,0 +1,229 @@
+.player-section{
+    background: #F8FAF9;
+
+    min-height: rem(652px);
+    // height: 100vh;
+    height: 100%;
+
+    // @include tablets{
+    //     min-height: rem(606px);
+    // }
+
+    // @include phones{
+    //     min-height: rem(511px);
+    // }
+}
+
+.player__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(48px);
+    text-align: center;
+    margin-bottom: rem(40px);
+
+    @include tablets{
+        margin-bottom: rem(40px);
+    }
+
+    @include phones{
+        font-weight: 700;
+        font-size: rem(40px);
+    }
+}
+
+.player-section__container{
+    margin-top: rem(31px);
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    max-width: rem(640px);
+    margin: 0 auto;
+    height: auto;
+    
+}
+.player{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 100%;
+    // max-width: rem(662px);
+
+    // height: rem(392px);
+    height: auto;
+
+    &.active .player__wrapper .player__splash{
+        display: none;
+    }
+
+    &.paused .player__controls .player__start{
+        width: rem(15px);
+        height: rem(20px);
+        border: rem(5px) solid transparent;
+        border-left-color: #F8FAF9;
+        border-right-color: #F8FAF9;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+
+    @include tablets{
+        max-width: rem(594px);
+        height: auto;
+    }
+
+    @include phones{
+        max-width: rem(570px);
+    }
+}
+.player__wrapper{
+    // height: 357px;
+    height: auto;
+}
+
+.player__splash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    // height: rem(392px);
+    height: auto;
+    background: url(../img/player/player.svg) center center/cover no-repeat;
+
+    cursor: pointer;
+
+    &::before{
+        position: absolute;
+        content: url(../img/player/splash_play.png);
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, 35%);
+    }
+
+    @include tablets{
+        max-width: rem(594px);
+    }
+
+    @include phones{
+        max-width: rem(570px);
+    }
+}
+.player__controls{
+    position: absolute;
+    bottom: rem(4px);
+    left: 0px;
+    right: 0;
+
+    width: 100%;
+    padding-left: rem(17px);
+    padding-right: rem(23px);
+
+    height: 35px;
+
+    background: #404040;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets{
+        max-width: rem(594px);
+    }
+
+    @include phones{
+        max-width: rem(570px);
+    }
+}
+
+.player__playback{
+    position: relative;
+
+    margin: 0 rem(10px);
+    width: rem(446px);
+    height: rem(7px);
+    background: #FEDB3F;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    @include tablets{
+        width: rem(399px);
+    }
+
+    @include phones{
+        width: rem(265px);
+    }
+}
+
+.player__playback-button{
+    position: absolute;
+    
+    width: rem(15px);
+    height: rem(15px);
+    border-radius: 50%;
+
+    background: #FEDB3F;
+    border: none;
+
+    cursor: pointer;
+}
+.player__start{
+    border: rem(9px) solid transparent;
+    width: 0; 
+    height: 0;
+    padding: 0;
+
+    border-left-color: #F8FAF9;
+    border-right-width: 0;
+    background: transparent;
+    border-left-width: rem(11px);
+
+    cursor: pointer;
+}
+
+.player__duration{
+    width: auto;
+    display: flex;
+    color: #FFFFFF;
+    user-select: none;
+
+    @include tablets{
+        font-size: rem(11px);
+    }
+}
+
+.player__duration-estimate{
+    display: flex;
+    margin-left: rem(10px);
+
+    @include tablets{
+        margin-left: rem(5px);
+    }
+}
+.player__duration-completed{
+    display: flex;
+}
+
+.player__elem{
+
+    @include tablets{
+        width: 100%;
+        height: rem(279px);
+    }
+    
+    @include phones{
+        // width: 100%;
+        height: rem(230px);
+    }
+}
