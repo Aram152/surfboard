@@ -97,4 +97,9 @@ task('browser-sync', () => {
 });
 
 // watch('./src/style/**/*.scss', series('styles'));
-task('default', series('clean', 'copy:html', 'styles', 'icons', 'js-files'));
+task('default', 
+    series(
+        'clean', 
+        parallel('copy:html', 'styles', 'icons', 'js-files')
+    )
+);
