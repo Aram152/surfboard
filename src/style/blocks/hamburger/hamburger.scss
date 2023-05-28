@@ -1,6 +1,6 @@
 .hamburger{
-    width: rem(26.11px);
-    height: rem(20px);
+    width: (1.6319rem);
+    height: (1.25rem);
 
     display: none;
     flex-direction: column;
@@ -14,6 +14,6 @@
 .hamburger-layer{
     display: flex;
     background-color: #fff;
-    height: rem(4px);
-    border-radius: rem(10px);
+    height: (0.25rem);
+    border-radius: (0.625rem);
 }

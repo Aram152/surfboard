@@ -10,7 +10,7 @@
     }
 
     &--vk{
-        height: rem(16px);
+        height: rem(1rem);
     }
 }
 
@@ -92,9 +92,9 @@ ul{
     border: 0;
     cursor: pointer;
     background: #FEDB3F;
-    border-radius: rem(100px);
-    padding: rem(21px) rem(41px);
-    width: rem(156px);
+    border-radius: (6.25rem);
+    padding: (1.3125rem) (2.5625rem);
+    width: (9.75rem);
     text-align: center;
     display:block;
     color: black;

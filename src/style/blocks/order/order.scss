@@ -2,7 +2,7 @@
     background: url(../img/order/surfer.svg) no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: rem(652px);
+    min-height: (40.75rem);
     // height: 100vh;
     height: 100%;
 
@@ -12,11 +12,11 @@
 
     @include tablets{
         background-position: center;
-        // min-height: rem(766px);
+        // min-height: (47.875rem);
     }
 
     @include phones{
-        // min-height: rem(966px);
+        // min-height: (60.375rem);
     }
 }
 
@@ -27,7 +27,7 @@
     justify-content: center;
 
     @include tablets{
-        max-width: rem(466px);
+        max-width: (29.125rem);
     }
 
     @include phones{
@@ -52,7 +52,7 @@
 }
 .forms-column{
     width: 50%;
-    margin-right: rem(27px);
+    margin-right: (1.6875rem);
 
     &:last-child{
         margin-right: 0;
@@ -61,13 +61,13 @@
     @include tablets{
         margin: 0;
         width: 100%;
-        // max-width: rem(466px);
+        // max-width: (29.125rem);
     }
 
     @include phones{
         margin: 0;
         width: 100%;
-        // max-width: rem(460px);
+        // max-width: (28.75rem);
     }
 }
 
@@ -83,7 +83,7 @@
 
 .form__block{
     width: 100%;
-    margin-right: rem(17px);
+    margin-right: (1.0625rem);
 
     &:last-child{
         margin-right: 0;
@@ -92,16 +92,16 @@
 
 .name__input, .tel__input, .street__input, .home__input{
     width: 100%;
-    height: rem(58px);
-    padding: rem(18px) rem(12px);
-    border-radius: rem(4px);
+    height: (3.625rem);
+    padding: (1.125rem) (0.75rem);
+    border-radius: (0.25rem);
 
     @include tablets{
-        height: rem(36px);
+        height: (2.25rem);
     }
 
     @include phones{
-        height: rem(36px);
+        height: (2.25rem);
     }
 }
 .home__input{
@@ -109,7 +109,7 @@
 }
 
 .form__block--adrees{
-    margin-right: rem(13.48px);
+    margin-right: (0.8425rem);
 
     &:last-child{
         margin-right: 0;
@@ -122,37 +122,37 @@
 
 .order__title{
     font-weight: 700;
-    font-size: rem(48px);
+    font-size: (3rem);
     color: #ffffff;
-    padding-top: rem(62px);
+    padding-top: (3.875rem);
     height: auto;
 
     @include tablets{
-        margin-top: rem(175px);
-        margin-bottom: rem(30px);
+        margin-top: (10.9375rem);
+        margin-bottom: (1.875rem);
         padding-top: 0;
     }
 
     @include phones{
-        font-size: rem(40px);
-        margin-top: rem(87px);
+        font-size: (2.5rem);
+        margin-top: (5.4375rem);
     }
 }
 
 .comment{
-    max-width: rem(450px);
+    max-width: (28.125rem);
     width: 100%;
     flex: 1;
-    height: rem(152px);
-    border-radius: rem(4px);
-    padding: rem(18px) rem(12px);
+    height: (9.5rem);
+    border-radius: (0.25rem);
+    padding: (1.125rem) (0.75rem);
 
     resize: none;
 
     @include tablets{
         max-width: 100%;
         width: 100%;
-        max-height: rem(82px);
+        max-height: (5.125rem);
     }
 
     // @include phones{
@@ -162,17 +162,17 @@
 }
 
 .form__title{
-    margin-top: rem(12px);
+    margin-top: (0.75rem);
     font-weight: 400;
-    font-size: rem(18px);
+    font-size: (1.125rem);
     color: #ffffff;
 
     @include tablets{
-        margin-top: rem(14px);
+        margin-top: (0.875rem);
     }
 
     @include phones{
-        font-size: rem(18px);
+        font-size: (1.125rem);
     }
 }
 .form__title--name{
@@ -182,30 +182,30 @@
 }
 
 .form__buttons{
-    margin-top: rem(46px);
-    padding-bottom: rem(85px);
+    margin-top: (2.875rem);
+    padding-bottom: (5.3125rem);
 
     @include tablets{
-        margin-top: rem(38px);
+        margin-top: (2.375rem);
         justify-content: center;
     }
 
     @include phones{
         justify-content: center;
-        padding-bottom: rem(81px);
+        padding-bottom: (5.0625rem);
     }
 }
 
 .button--order{
     font-stretch: normal;
     font-weight: 800;
-    font-size: rem(18px);
+    font-size: (1.125rem);
 }
 .button--clear{
     font-weight: 400;
-    font-size: rem(18px);
+    font-size: (1.125rem);
 
-    margin-left: rem(22px);
+    margin-left: (1.375rem);
     padding: 0;
     border-radius: 0;
 
@@ -216,7 +216,7 @@
     color: #ffffff;
 
     @include phones{
-        font-size: rem(16px);
+        font-size: (1rem);
     }
 
 }
@@ -225,11 +225,11 @@
 }
 
 .radio--card{
-    margin-left: rem(9px);
+    margin-left: (0.5625rem);
 }
 
 .comment, .home__input, .street__input, .tel__input, .name__input{
-    border: solid rem(3px) transparent;
+    border: solid (0.1875rem) transparent;
     
     &:focus{
         border-color: #FEDB3F;
@@ -251,15 +251,15 @@
     align-items: center;
     cursor: pointer;
     user-select: none;
-    margin-top: rem(40px);
+    margin-top: (2.5rem);
     color: #ffffff;
 
     &:first-child{
-        margin-right: rem(15px);
+        margin-right: (0.9375rem);
     }
 
     &--checkbox {
-        margin-top: rem(21px);
+        margin-top: (1.3125rem);
         .radio__visible {
             border-radius: 0;
             &::before{
@@ -270,13 +270,13 @@
         }
 
         @include tablets{
-            margin-top: rem(24px);
+            margin-top: (1.5rem);
         }
         
     }
 
     @include tablets{
-        margin-top: rem(24px);
+        margin-top: (1.5rem);
     }
 }
 
@@ -291,20 +291,20 @@
 }
 
 .radio__visible{
-    width: rem(25px);
-    height: rem(25px);
+    width: (1.5625rem);
+    height: (1.5625rem);
     position: relative;
     border-radius: 50%;
     background-color: #ffffff;
 
-    margin-right: rem(10px);
+    margin-right: (0.625rem);
 
     &::before{
         display: none;
         content: "";
 
-        width: rem(13px);
-        height: rem(13px);
+        width: (0.8125rem);
+        height: (0.8125rem);
         background-color: #FEDB3F;
         border-radius: 50%;
         position: absolute;
@@ -315,5 +315,5 @@
 }
 
 .input-error{
-    border: 2px solid red;
+    border: 0.125rem solid red;
 }

@@ -18,10 +18,10 @@
   
 .section__title--text {
     position: absolute;
-    top: rem(109px);
-    left: rem(84px);
+    top: (6.8125rem);
+    left: (5.25rem);
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     color: #fff;
 }
   
@@ -38,25 +38,25 @@
   
 .menu-acco__trigger{
     position: relative;
-    width: rem(102px);
+    width: (6.375rem);
 
     &:hover{
-        border: 1px solid rgba(47, 50, 52, 0.5);
+        border: 0.0625rem solid rgba(47, 50, 52, 0.5);
     }
 
     @include tablets{
-        width: rem(110px);
+        width: (6.875rem);
     }
 
     @include phones{
-        width: rem(140px);
+        width: (8.75rem);
     }
 }
   
 .menu-acco__trigger-text{
     position: absolute;
     left: 50%;
-    bottom: rem(15px);
+    bottom: (0.9375rem);
     transform: rotate(-90deg) translate(-50%, -50%);
     
     transform-origin: 0 0;
@@ -65,7 +65,7 @@
   
 .menu-acco__content{
     width: 0;
-    padding: 0px;
+    padding: 0rem;
     opacity: 1;
     overflow: hidden;
 
@@ -78,13 +78,13 @@
     color: #fff;
     font-style: normal;
     font-weight: 400;
-    font-size: rem(16px);
+    font-size: (1rem);
 }
   
 .menu-acco__line_active > .menu-acco__content {
-    width: rem(300px);
+    width: (18.75rem);
     // width: 100%;
-    padding: rem(20px);
+    padding: (1.25rem);
     box-sizing: border-box;
     opacity: 1;
     z-index: 10;

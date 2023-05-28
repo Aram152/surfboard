@@ -45,8 +45,8 @@ task( 'copy:html',  () => {
 task( 'styles',  () => {
     return src(styles)
         .pipe(sourcemaps.init())
-        .pipe(concat('result.min.scss'))
         .pipe(sassGlob())
+        .pipe(concat('result.min.scss'))
         .pipe(sass().on('error', sass.logError))
         // .pipe(px2rem())
         .pipe(autoprefixer({cascade: false}))

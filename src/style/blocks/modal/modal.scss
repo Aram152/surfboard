@@ -12,8 +12,8 @@
 }
 
 .modal__container{
-    width: rem(309px);
-    height: rem(176px);
+    width: (19.3125rem);
+    height: (11rem);
 
     display: flex;
     flex-direction: column;
@@ -25,17 +25,17 @@
 
 .modal__content{
     font-weight: 500;
-    font-size: rem(18px);
+    font-size: (1.125rem);
 
-    margin-bottom: rem(18px);
+    margin-bottom: (1.125rem);
 }
 
 .button--modal{
     font-weight: 800;
-    font-size: rem(16px);
+    font-size: (1rem);
 
-    width: rem(151px);
-    height: rem(60px);
+    width: (9.4375rem);
+    height: (3.75rem);
 }
 
 .error-modal{

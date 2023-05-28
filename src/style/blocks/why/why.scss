@@ -1,18 +1,18 @@
 .why{
     background-color: #ffffff;
 
-    min-height: rem(652px);
+    min-height: (40.75rem);
     // height: 100vh;
     height: 100%;
 
     display: flex;
 
     // @include tablets{
-    //     min-height: rem(1000px);
+    //     min-height: (62.5rem);
     // }
 
     // @include phones{
-    //     min-height: rem(707px);
+    //     min-height: (44.1875rem);
     // }
 }
 
@@ -21,8 +21,8 @@
     flex-direction: column;
     justify-content: center;
 
-    padding-top: rem(107px);
-    padding-bottom: rem(114px);
+    padding-top: (6.6875rem);
+    padding-bottom: (7.125rem);
     background-color: #ffffff;
 }
 
@@ -36,28 +36,28 @@
 .why-text__title{
     font-style: normal;
     font-weight: 700;
-    font-size: rem(48px);
+    font-size: (3rem);
     text-transform: uppercase;
     text-align: center;
 
     @include phones{
         margin: 0;
-        font-size: rem(40px);
+        font-size: (2.5rem);
     }
 }
 .why-text__subtitle{
     font-style: normal;
     font-weight: 400;
-    font-size: rem(18px);
+    font-size: (1.125rem);
 
     @include phones{
-        margin: rem(9px) 0 0 0;
+        margin: (0.5625rem) 0 0 0;
     }
 }
 
 .why-benefit__list{
     display: flex;
-    margin-top: rem(49px);
+    margin-top: (3.0625rem);
 
     @include phones{
         flex-direction: column;
@@ -69,7 +69,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: rem(53px);
+    margin-left: (3.3125rem);
     text-align: center;
     position: relative;
 
@@ -83,8 +83,8 @@
 .why-benefit__items::before{
     content: url(../img/why/points.png);
     position: absolute;
-    top: rem(50px);
-    left: rem(-60px);
+    top: (3.125rem);
+    left: (-3.75rem);
 
     @include tablets{
         content: "";
@@ -102,34 +102,34 @@
 }
 
 .why-benefit__img{
-    width: rem(128px);
-    height: rem(128px);
+    width: (8rem);
+    height: (8rem);
     border-radius: 50%;
     background-color: #F2F5F4;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
     @include phones{
-        min-width: rem(128px);
-        min-height: rem(128px);
+        min-width: (8rem);
+        min-height: (8rem);
     }
 }
 .why-benefit__img--perfect{
-    padding: rem(30px) rem(42px) rem(30px) rem(42px);
+    padding: (1.875rem) (2.625rem) (1.875rem) (2.625rem);
 
     @include phones{
-        margin-bottom: rem(31px);
+        margin-bottom: (1.9375rem);
     }
 }
 .why-benefit__img--strong{
-    padding: rem(32px) rem(32px) rem(32px) rem(32px);
+    padding: (2rem) (2rem) (2rem) (2rem);
 
     @include phones{
-        margin-bottom: rem(31px);
+        margin-bottom: (1.9375rem);
     }
 }
 .why-benefit__img--unique{
-    padding: rem(30px) rem(30px);
+    padding: (1.875rem) (1.875rem);
 
     @include phones{
         margin-bottom: 0;
@@ -142,7 +142,7 @@
         flex-direction: column;
 
         text-align: left;
-        margin-left: rem(12px);
+        margin-left: (0.75rem);
     }
 }
 
@@ -150,17 +150,17 @@
     color: #292929;
     font-style: normal;
     font-weight: 700;
-    font-size: rem(27px);
-    margin: 0 0 rem(20px) 0;
+    font-size: (1.6875rem);
+    margin: 0 0 (1.25rem) 0;
 
     @include phones{
-        margin-bottom: rem(9px);
+        margin-bottom: (0.5625rem);
     }
 }
 .why-benefit__item--text{
     color: #666666;
     font-style: normal;
     font-weight: 300;
-    font-size: rem(18px);
+    font-size: (1.125rem);
     margin: 0;
 }

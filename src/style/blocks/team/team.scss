@@ -1,6 +1,6 @@
 .team{
     background: #fff;
-    min-height: rem(652px);
+    min-height: (40.75rem);
     // height: 100vh;
     height: 100%;
 
@@ -8,7 +8,7 @@
     overflow: hidden;
 
     @include tablets{
-        // min-height: rem(1000px);
+        // min-height: (62.5rem);
         // height: 100vh;
         // height: 100%;
     }
@@ -41,9 +41,9 @@
 }
 
 .team__item{
-    width: rem(220px);
+    width: (13.75rem);
 
-    margin-left: rem(20px);
+    margin-left: (1.25rem);
 
     display: flex;
     flex-direction: column;
@@ -56,22 +56,22 @@
     @include tablets{
         margin-left: 0;
 
-        width: rem(222px);
+        width: (13.875rem);
     }
 }
 
 .team__title{
     font-weight: 700;
-    font-size: rem(48px);
-    margin-bottom: rem(53px);
+    font-size: (3rem);
+    margin-bottom: (3.3125rem);
 }
 .team__name{
     position: relative;
 
-    margin-top: rem(21px);
+    margin-top: (1.3125rem);
 
     font-weight: 700;
-    font-size: rem(21px);
+    font-size: (1.3125rem);
 
     border: none;
     background: none;
@@ -80,14 +80,14 @@
         content: url(../img/team/Polygon.svg);
         position: absolute;
         // transform: rotate(180deg);
-        right: rem(-5px);
-        top: rem(-1px);
-        // bottom: rem(-1px);
+        right: (-0.3125rem);
+        top: (-0.0625rem);
+        // bottom: (-0.0625rem);
     }
 
     @include tablets{
         margin-top: 0;
-        margin-bottom: rem(16px);
+        margin-bottom: (1rem);
     }
 }
 .team__name--triangle{
@@ -96,29 +96,29 @@
         content: url(../img/team/Polygon.svg);
         position: absolute;
         transform: rotate(180deg);
-        right: rem(-5px);
-        bottom: rem(-1px);
+        right: (-0.3125rem);
+        bottom: (-0.0625rem);
     }
 }
 
 .team__content-title{
-    padding-top: rem(8px);
+    padding-top: (0.5rem);
 
     font-weight: 400;
-    font-size: rem(18px);
+    font-size: (1.125rem);
 
     @include tablets{
         font-weight: 700;
     }
 }
 .team__content-text{
-    margin-top: rem(4px);
+    margin-top: (0.25rem);
 
     font-weight: 300;
-    font-size: rem(18px);
+    font-size: (1.125rem);
 
     @include tablets{
-        padding-bottom: rem(32px);
+        padding-bottom: (2rem);
     }
 }
 

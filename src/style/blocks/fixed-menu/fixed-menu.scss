@@ -11,7 +11,7 @@
 }
 
 .fixed-menu__item{
-    margin-bottom: rem(5px);
+    margin-bottom: (0.3125rem);
 
     &--active{
         .fixed-menu__link{
@@ -22,10 +22,10 @@
 }
 
 .fixed-menu__link{
-    width: rem(18px);
-    height: rem(19px);
+    width: (1.125rem);
+    height: (1.1875rem);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: 0.0625rem solid transparent;
     // это кругляшка для выделения активного пункта, пока прозрачная
     display: block;
     position: relative;
@@ -33,7 +33,7 @@
     &::before{
         content: "";
         display: block;
-        width: rem(9px);height: rem(9px);
+        width: (0.5625rem);height: (0.5625rem);
         border-radius: 50%;
         background: white;
 

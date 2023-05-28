@@ -1,16 +1,16 @@
 .player-section{
     background: #F8FAF9;
 
-    min-height: rem(652px);
+    min-height: (40.75rem);
     // height: 100vh;
     height: 100%;
 
     // @include tablets{
-    //     min-height: rem(606px);
+    //     min-height: (37.875rem);
     // }
 
     // @include phones{
-    //     min-height: rem(511px);
+    //     min-height: (31.9375rem);
     // }
 }
 
@@ -23,28 +23,28 @@
 .section__title{
     font-style: normal;
     font-weight: 700;
-    font-size: rem(48px);
+    font-size: (3rem);
     text-align: center;
-    margin-bottom: rem(40px);
+    margin-bottom: (2.5rem);
 
     @include tablets{
-        margin-bottom: rem(40px);
+        margin-bottom: (2.5rem);
     }
 
     @include phones{
         font-weight: 700;
-        font-size: rem(40px);
+        font-size: (2.5rem);
     }
 }
 
 .player-section__container{
-    margin-top: rem(31px);
+    margin-top: (1.9375rem);
 
     display: flex;
     justify-content: center;
 
     width: 100%;
-    max-width: rem(640px);
+    max-width: (40rem);
     margin: 0 auto;
     height: auto;
     
@@ -56,9 +56,9 @@
     position: relative;
 
     width: 100%;
-    // max-width: rem(662px);
+    // max-width: (41.375rem);
 
-    // height: rem(392px);
+    // height: (24.5rem);
     height: auto;
 
     &.active .player__wrapper .player__splash{
@@ -66,26 +66,26 @@
     }
 
     &.paused .player__controls .player__start{
-        width: rem(15px);
-        height: rem(20px);
-        border: rem(5px) solid transparent;
+        width: (0.9375rem);
+        height: (1.25rem);
+        border: (0.3125rem) solid transparent;
         border-left-color: #F8FAF9;
         border-right-color: #F8FAF9;
-        border-top-width: 0px;
-        border-bottom-width: 0px;
+        border-top-width: 0rem;
+        border-bottom-width: 0rem;
     }
 
     @include tablets{
-        max-width: rem(594px);
+        max-width: (37.125rem);
         height: auto;
     }
 
     @include phones{
-        max-width: rem(570px);
+        max-width: (35.625rem);
     }
 }
 .player__wrapper{
-    // height: 357px;
+    // height: 22.3125rem;
     height: auto;
 }
 
@@ -95,7 +95,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    // height: rem(392px);
+    // height: (24.5rem);
     height: auto;
     background: url(../img/player/player.svg) center center/cover no-repeat;
 
@@ -110,24 +110,24 @@
     }
 
     @include tablets{
-        max-width: rem(594px);
+        max-width: (37.125rem);
     }
 
     @include phones{
-        max-width: rem(570px);
+        max-width: (35.625rem);
     }
 }
 .player__controls{
     position: absolute;
-    bottom: rem(4px);
-    left: 0px;
+    bottom: (0.25rem);
+    left: 0rem;
     right: 0;
 
     width: 100%;
-    padding-left: rem(17px);
-    padding-right: rem(23px);
+    padding-left: (1.0625rem);
+    padding-right: (1.4375rem);
 
-    height: 35px;
+    height: 2.1875rem;
 
     background: #404040;
 
@@ -136,20 +136,20 @@
     align-items: center;
 
     @include tablets{
-        max-width: rem(594px);
+        max-width: (37.125rem);
     }
 
     @include phones{
-        max-width: rem(570px);
+        max-width: (35.625rem);
     }
 }
 
 .player__playback{
     position: relative;
 
-    margin: 0 rem(10px);
-    width: rem(446px);
-    height: rem(7px);
+    margin: 0 (0.625rem);
+    width: (27.875rem);
+    height: (0.4375rem);
     background: #FEDB3F;
 
     display: flex;
@@ -158,19 +158,19 @@
     cursor: pointer;
 
     @include tablets{
-        width: rem(399px);
+        width: (24.9375rem);
     }
 
     @include phones{
-        width: rem(265px);
+        width: (16.5625rem);
     }
 }
 
 .player__playback-button{
     position: absolute;
     
-    width: rem(15px);
-    height: rem(15px);
+    width: (0.9375rem);
+    height: (0.9375rem);
     border-radius: 50%;
 
     background: #FEDB3F;
@@ -179,7 +179,7 @@
     cursor: pointer;
 }
 .player__start{
-    border: rem(9px) solid transparent;
+    border: (0.5625rem) solid transparent;
     width: 0; 
     height: 0;
     padding: 0;
@@ -187,7 +187,7 @@
     border-left-color: #F8FAF9;
     border-right-width: 0;
     background: transparent;
-    border-left-width: rem(11px);
+    border-left-width: (0.6875rem);
 
     cursor: pointer;
 }
@@ -199,16 +199,16 @@
     user-select: none;
 
     @include tablets{
-        font-size: rem(11px);
+        font-size: (0.6875rem);
     }
 }
 
 .player__duration-estimate{
     display: flex;
-    margin-left: rem(10px);
+    margin-left: (0.625rem);
 
     @include tablets{
-        margin-left: rem(5px);
+        margin-left: (0.3125rem);
     }
 }
 .player__duration-completed{
@@ -219,11 +219,11 @@
 
     @include tablets{
         width: 100%;
-        height: rem(279px);
+        height: (17.4375rem);
     }
     
     @include phones{
         // width: 100%;
-        height: rem(230px);
+        height: (14.375rem);
     }
 }
