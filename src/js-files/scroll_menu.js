@@ -1,5 +1,8 @@
 const lines = document.querySelectorAll('.menu-acco__line');
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 for (let index = 0; index < lines.length; index++) {
   const element = lines[index]
   element.addEventListener('click', e => {
@@ -120,15 +123,16 @@ $('[data-scroll-to]').click(e => {
 });
 
 /*jquery touch swipe*/
-// if (isMobile) {
-$(".wrapper__content").swipe({
-    swipe: function (event, direction) {
-        const scroller = scrollViewport();
-        let scrollDirection = "";
+if (isMobile) {
+    $(".wrapper__content").swipe({
+        swipe: function (event, direction) {
+            const scroller = scrollViewport();
+            let scrollDirection = "";
 
-        if (direction === "up") scrollDirection = "next";
-        if (direction === "down") scrollDirection = "prev";
+            if (direction === "up") scrollDirection = "next";
+            if (direction === "down") scrollDirection = "prev";
 
-        scrollViewport(scrollDirection);
-    },
-});
+            scrollViewport(scrollDirection);
+        },
+    });
+}

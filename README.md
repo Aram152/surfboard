@@ -1,4 +1,4 @@
 How to install and build app
-1. git clone https://github.com/aram152/sur
-2. cd sur
+1. git clone https://github.com/aram152/surfboard
+2. cd surfboard
 3. npm i

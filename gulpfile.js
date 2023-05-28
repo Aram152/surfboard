@@ -1,4 +1,4 @@
-const { src, dest, task, series, watch } = require('gulp')
+const { src, dest, task, series, watch, parallel } = require('gulp')
 const rm = require('gulp-rm');
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
@@ -38,7 +38,7 @@ const styles = [
 
 
 task( 'copy:html',  () => {
-    return src('src/**/*.html').pipe(dest('dist'))
+    return src('src/*.html').pipe(dest('dist'))
 });
 
 
@@ -48,10 +48,10 @@ task( 'styles',  () => {
         .pipe(concat('result.min.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
-        .pipe(px2rem())
+        // .pipe(px2rem())
         .pipe(autoprefixer({cascade: false}))
-        // .pipe(gcmq())
-        // .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gcmq())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(sourcemaps.write())
         .pipe(dest('dist'))
         .pipe(reload({stream: true}));
