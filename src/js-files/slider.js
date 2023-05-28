@@ -1,6 +1,7 @@
 const slider = jQuery('.slider__list').bxSlider({
     pager: false,
-    controls: false
+    controls: false,
+    touchEnabled: false
 });
 
 $('.svg__slider--l').click(e => {
