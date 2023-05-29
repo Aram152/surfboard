@@ -1,16 +1,9 @@
 .slider{
     background: #F8FAF9;
-
-    // min-height: (40.125rem);
-    // height: 100vh;
     height: 100%;
     overflow: hidden;
 
     display: flex;
-
-    // @include tablets{
-    //     // height: (51rem);
-    // }
 }
 
 .slider__container{
@@ -240,8 +233,6 @@
 .button--slider{
     width: (9.75rem);
     height: (3.75rem);
-
-    // margin-left: (1.75rem);
 
     font-weight: 800;
     font-size: (1rem);

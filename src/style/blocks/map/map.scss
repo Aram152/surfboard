@@ -1,9 +1,5 @@
 .map{
-    // background: url(../img/map/map.png) no-repeat;
-    // background-size: cover;
-    // background-position: center;
     min-height: (40.75rem);
-    // height: 100vh;
     height: 100%;
 
     display: flex;
@@ -13,12 +9,10 @@
 
     @include tablets{
         background-position: center;
-        // min-height: (39.5625rem);
     }
 
     @include phones{
         background-position: center;
-        // min-height: (39.5625rem);
     }
 }
 

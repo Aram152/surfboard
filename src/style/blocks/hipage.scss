@@ -4,7 +4,6 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: (40.75rem);
-    // height: 100vh;
     height: 100%;
     min-height: (40.625rem);
     border: 0.0625rem solid #000000;
@@ -20,7 +19,6 @@
 
     @include tablets{
         background-position: right 5%;
-        // min-height: (62.4375rem);
     }
 
     @include phones{
@@ -50,7 +48,6 @@
 
     @include phones{
         background: #1968B1;
-        // padding: 0;
     }
 }
 .contacts__phone{
@@ -62,9 +59,9 @@
 }
 
 .header__container{
-    // width: 100%;
+
     display: flex;
-    // flex: 1;
+
     align-items: flex-start;
     justify-content: space-between;
 
@@ -90,7 +87,7 @@
 .menu__list{
     flex-wrap: wrap;
     justify-content: center;
-    // align-items: flex-start;
+
 }
 
 .menu__item{
@@ -105,8 +102,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // margin-top: (6.4212rem);
-    // margin-left: 5rem;
+
     flex: 1;
 }
 
@@ -168,7 +164,7 @@
 }
 
 .advantages{
-    // margin-top: (4rem);
+
     font-style: normal;
     font-weight: 700;
     font-size: (1rem);

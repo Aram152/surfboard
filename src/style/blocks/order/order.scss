@@ -3,7 +3,6 @@
     background-size: cover;
     background-position: center;
     min-height: (40.75rem);
-    // height: 100vh;
     height: 100%;
 
     display: flex;
@@ -12,11 +11,6 @@
 
     @include tablets{
         background-position: center;
-        // min-height: (47.875rem);
-    }
-
-    @include phones{
-        // min-height: (60.375rem);
     }
 }
 
@@ -155,10 +149,6 @@
         max-height: (5.125rem);
     }
 
-    // @include phones{
-    //     width: 100%;
-    //     flex: 1;
-    // }
 }
 
 .form__title{
@@ -242,7 +232,6 @@
     flex-wrap: wrap;
 
     @include phones{
-        // align-items: center;
         justify-content: center;
     }
 }
@@ -264,7 +253,6 @@
             border-radius: 0;
             &::before{
                 background: url(../img/icons/Vector12.png) no-repeat;
-                // background-size: cover;
                 background-position: center;
             }
         }

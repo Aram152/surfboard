@@ -5,7 +5,6 @@ $baseFontSize: 16px;
     @return calc($px / $baseFontSize) + 0rem;
 }
 
-//breakpoints
 $tablets: 768px;
 $phones: 480px;
 

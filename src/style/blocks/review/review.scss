@@ -2,18 +2,10 @@
     background-color: #fff;
 
     min-height: (40.75rem);
-    // height: 100vh;
     height: 100%;
 
     display: flex;
 
-    // @include tablets{
-    //     min-height: (61rem);
-    // }
-
-    // @include phones{
-    //     min-height: (50rem);
-    // }
 }
 
 .reviews__title{
@@ -91,7 +83,6 @@
         background-image: url(../img/review/RectangleVasilii.png);
     }
 
-    //not specially 3 rows
     @include tablets{
         width: (8.125rem);
         height: (8.125rem);
@@ -108,7 +99,6 @@
     max-width: (28.9375rem);
     margin-left: (2.5rem);
 
-    //not specially 5 rows
     max-height: (16.5rem);
     overflow: hidden;
     @include tablets{
@@ -129,7 +119,6 @@
     }
 }
 .review__text{
-    // position: static;
 
     color: #666666;
     font-style: normal;

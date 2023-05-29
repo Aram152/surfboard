@@ -17,7 +17,6 @@
         .fixed-menu__link{
             border-color: white;
         }
-        // тут закрасили кругляшку на активном пункте меню
     }
 }
 
@@ -26,7 +25,6 @@
     height: (1.1875rem);
     border-radius: 50%;
     border: 0.0625rem solid transparent;
-    // это кругляшка для выделения активного пункта, пока прозрачная
     display: block;
     position: relative;
 
