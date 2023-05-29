@@ -96,10 +96,14 @@ task('browser-sync', () => {
     });
 });
 
-// watch('./src/style/**/*.scss', series('styles'));
+task('watch', () => {
+    watch('./src/style/**/*.scss', series('styles'));
+})
+
 task('default', 
     series(
         'clean', 
-        parallel('copy:html', 'styles', 'icons', 'js-files')
+        parallel('copy:html', 'styles', 'icons', 'js-files'),
+        parallel('watch', 'browser-sync')
     )
 );
